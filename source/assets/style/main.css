@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+:root {
+    --primary: black;
+    --mainColor: #2f9342;
+    --secColor: #1971C2;
+    --mainMeasure: 1em;
+    --secMeasure: 0.5em;
+
+    --fontSize: 1.2em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.container {
+    min-height: 90vh;
+    /* width: 50vw; */
+    border: .01em solid var(--primary);
+    padding: var(--mainMeasure);    
+}
+
+/* ------------------------------------------ */
+
+hr {
+    border: 1px solid var(--primary);
+    margin-bottom: var(--mainMeasure);
+}
+
+.name {
+    font-weight: 100;
+}
+
+.description {
+    color: var(--mainColor);
+    margin: var(--mainMeasure) 0 var(--mainMeasure) 0;
+}
+
+#address {
+    margin-bottom: var(--mainMeasure);
+}
+
+/* ------------------------------------------ */
+
+#skills, #education, #xp, #footer {
+    margin-bottom: 1.5em;
+}
+
+.skill-title, .education-title, .xp-title, .footer-title {
+    margin-bottom: var(--secMeasure);
+    color: var(--mainColor);
+}
+
+/* ------------------------------------------ */
+
+.uni-title {
+    color: var(--secColor);
+    font-size: var(--fontSize);
+}
+
+/* ------------------------------------------ */
+
+.social-group .social a {
+    color: var(--primary);
+}
+
+.social-group .social a:hover {
+    text-decoration: underline;
+}
